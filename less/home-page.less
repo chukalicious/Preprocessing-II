@@ -48,7 +48,7 @@
 
   @media @mobile {
     .hero {
-      width: 95%; 
+      width: @mobilewidth; 
       margin-left: auto;
       margin-right: auto;
     }
@@ -76,6 +76,27 @@
 
       img {
         border-radius: 10px;
+      }
+    }
+
+    @media @mobile {
+      display: flex; 
+      flex-direction: column;
+      width: @mobilewidth;
+      margin: 0 auto;
+      
+      .text-content {
+        margin-left: @leftmargin;
+        width: @mobilewidth;
+      }
+
+      .img-content {
+        width: 100%;
+        margin: auto;
+
+        img {
+          width: 100%;
+        }
       }
     }
   }
