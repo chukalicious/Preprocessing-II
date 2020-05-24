@@ -277,9 +277,9 @@ nav ul li {
   /* .border(1px, red, solid);  */
   display: flex;
   justify-content: center;
-  background-color: #17A2B8;
-  border-radius: 10px;
   font-size: 2rem;
   padding: 0.7rem;
-  color: white;
+  color: #FFFFFF;
+  background-color: #17A2B8;
+  border-radius: 10px;
 }
