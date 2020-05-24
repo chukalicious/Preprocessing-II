@@ -363,3 +363,14 @@ nav ul li {
   background-color: #17A2B8;
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .home .content-pick .destination {
+    width: 100%;
+  }
+}

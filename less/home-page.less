@@ -154,5 +154,16 @@
         .buttonstyle(@btndisplay, @alignment, @txtsize, @txtpadding, @white, @eastern-blue, @pillshape); 
       }
     }
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      width: 70%; 
+      margin: 0 auto;
+
+      .destination {
+        width: 100%; 
+      }
+    }
   }
 }// home
