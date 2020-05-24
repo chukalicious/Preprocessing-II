@@ -273,3 +273,15 @@ nav ul li {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  /* .border(1px, red, solid);  */
+  display: flex;
+  justify-content: center;
+  background-color: #17A2B8;
+  border-radius: 10px;
+}
+.home .content-pick .destination .btn button {
+  font-size: 2rem;
+  padding: 0.7rem;
+  color: white;
+}
