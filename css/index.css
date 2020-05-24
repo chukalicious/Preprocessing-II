@@ -250,8 +250,21 @@ nav ul li {
   /* .border(1px, orange, solid); */
 }
 @media (max-width: 500px) {
-  .home .hero .hero h2 {
-    padding-top: 2rem;
+  .home .hero h2,
+  .home .hero p {
+    width: 100%;
+    padding-left: 1rem;
+    /* .border(1px, red, solid);  */
+  }
+  .home .hero p {
+    padding-right: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .home .hero {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .home .content-section {
