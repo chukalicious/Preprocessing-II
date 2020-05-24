@@ -218,9 +218,9 @@ nav ul li {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home {
-  /* border: red solid 1px; */
-}
+/* .home {
+  border: red solid 1px;
+} */
 .home header {
   display: flex;
   flex-direction: column;
@@ -233,9 +233,9 @@ nav ul li {
     /* border: solid 1px red; */
   }
 }
-.home .hero {
-  /* .border(1px, hotpink, dashed); */
-}
+/* .home .hero {
+  .border(1px, hotpink, dashed);
+} */
 .home .hero img {
   width: 100%;
   border-top: dashed 3px #C0C0C0;
@@ -374,6 +374,10 @@ nav ul li {
     width: 100%;
   }
 }
-.form-container {
-  background-color: red;
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  border: 1px red solid;
+  margin: 2rem auto;
 }
