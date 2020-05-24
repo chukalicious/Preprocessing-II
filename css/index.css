@@ -199,12 +199,29 @@ nav ul li {
   padding: 20px;
 }
 .home {
-  border: red solid 1px;
+  /* border: red solid 1px; */
 }
 .home header {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  margin-top: 4.5rem;
+  margin: 4.5rem 0 2rem 0;
+}
+.home .hero {
+  /* .border(1px, hotpink, dashed); */
+}
+.home .hero img {
+  width: 100%;
+  border-bottom: dashed 1px #C0C0C0;
+}
+.home .hero h2 {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  /* .border(1px, blue, solid);  */
+}
+.home .hero p {
+  margin-top: 0;
+  /* .border(1px, orange, solid); */
 }
 .home .content-section {
   margin: 30px 0;
