@@ -174,13 +174,18 @@ nav {
 }
 nav h1 {
   width: 50%;
-  border: 1px yellow solid;
+  /* .border(1px, yellow, solid);  */
 }
 nav ul {
   display: flex;
   width: 50%;
   justify-content: space-around;
-  border: 1px green solid;
+  /* .border(1px, green, solid); */
+}
+nav ul li {
+  margin-top: 2rem;
+  /* .border(1px, hotpink, solid); */
+  font-size: 1.2rem;
 }
 .footer {
   width: 100%;
@@ -199,6 +204,7 @@ nav ul {
 .home header {
   display: flex;
   width: 100%;
+  margin-top: 4.5rem;
 }
 .home .content-section {
   margin: 30px 0;
