@@ -218,7 +218,9 @@ nav ul li {
   font-size: 1.6rem;
   padding: 20px;
 }
-
+.home {
+  /* border: red solid 1px; */
+}
 .home header {
   display: flex;
   flex-direction: column;
@@ -231,7 +233,9 @@ nav ul li {
     /* border: solid 1px red; */
   }
 }
-
+.home .hero {
+  /* .border(1px, hotpink, dashed); */
+}
 .home .hero img {
   width: 100%;
   border-top: dashed 3px #C0C0C0;
@@ -409,4 +413,12 @@ nav ul li {
   font-size: 2rem;
   color: #FFFFFF;
   background-color: #17A2B8;
+}
+@media (max-width: 500px) {
+  .form-container {
+    width: 90%;
+  }
+  .form-container form .button {
+    width: 50%;
+  }
 }
