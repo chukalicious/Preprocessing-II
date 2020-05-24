@@ -127,6 +127,17 @@
     img {
       border-radius: 10px;
     }
+
+    @media @mobile {
+      width: @mobilewidth;
+
+      h2 {
+        margin-top: 2rem;
+      }
+      h2 , p{
+        padding-left: @leftmargin;
+      }
+    }
   }
 
   .content-pick {
