@@ -1,0 +1,53 @@
+.form-container {
+    width: 75%;
+    margin: 3rem auto; 
+    .border(2px, @silver, dashed); 
+    border-radius: @pillshape;
+    form {
+        display: flex; 
+        flex-direction: column;
+        font-size: 2rem;
+        /* .border(1px, red, solid); */ 
+        margin: 2rem auto; 
+        div {
+            display: flex;
+            padding: 1rem 1.5rem; 
+            label {
+                /* .border(1px, black, solid); */ 
+                width: 40%; 
+                text-align: end; 
+                margin-right: 1rem;  
+                margin-top: 1rem; 
+            }
+            input {
+                .border(1px, @silver, solid);
+                border-radius: 3px;
+                height: 3rem; 
+                width: 60%; 
+                font-size: 2rem;
+            } 
+        }
+        .button {
+            /* .border(1px, red, solid); */ 
+            border-radius: 3px;
+            width: 20%; 
+            margin: 2rem auto;
+            font-size: 2rem;
+            color: @white; 
+            background-color: @eastern-blue;
+
+            
+        }
+    }
+    
+    @media @mobile {
+        width: 90%;
+        form {
+            
+        .button {
+                width: 50%;
+            }
+        } 
+    }
+}
+

@@ -1,1 +1,46 @@
 // Navigation Styles here
+
+nav {
+    display: flex;
+    width: 100%; 
+
+    h1 {
+        width: 50%;
+        /* .border(1px, yellow, solid);  */
+    }
+    ul {
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+        /* .border(1px, green, solid); */ 
+        li {
+            margin-top: 2rem;
+            /* .border(1px, hotpink, solid); */
+            font-size: 1.2rem;
+
+        }
+    }
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            /* .border(1px, red, solid);  */
+            width: 100%;
+            text-align: center;
+        }
+
+        ul {
+            display: flex;
+            /* .border(1px, pink, solid); */
+            width: 100%;  
+
+            li {
+                font-size: 1.5rem; 
+                /* .border(1px, green, solid);  */
+            }
+        }
+    }
+}
+    

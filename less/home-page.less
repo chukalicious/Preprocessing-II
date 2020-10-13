@@ -1,16 +1,73 @@
 .home {
 
+  /* border: red solid 1px; */
+
+  header {
+    display: flex;
+    flex-direction: column;
+    width:100%; 
+    margin: 4.5rem 0 2rem 0;
+
+    @media @mobile {
+      display: flex;
+      /* border: solid 1px red; */
+    }
+  }
+
+  .hero {
+    /* .border(1px, hotpink, dashed); */
+
+    img {
+      width: 100%; 
+      border-top: dashed 3px @silver; 
+      
+    }
+
+    h2{
+      .sectiontitlespacing(@titletop, 0); 
+      /* .border(1px, blue, solid);  */
+    }
+
+    p {
+      margin-top: 0; 
+      /* .border(1px, orange, solid); */
+    }
+
+    @media @mobile {
+
+      h2, p{
+        width: 100%;
+        padding-left: 1rem; 
+        /* .border(1px, red, solid);  */
+      }
+      p {
+        padding-right: 1rem;
+      }
+    }
+  }
+
+  @media @mobile {
+    .hero {
+      width: @mobilewidth; 
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    /* .border(1px, green, solid); */
+    border-top: dashed 2px @silver; 
+    padding-top: 2rem;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
+      margin-top: 3rem; 
+      
     }
 
     .img-content {
@@ -19,6 +76,27 @@
 
       img {
         border-radius: 10px;
+      }
+    }
+
+    @media @mobile {
+      display: flex; 
+      flex-direction: column;
+      width: @mobilewidth;
+      margin: 0 auto;
+      
+      .text-content {
+        margin-left: @leftmargin;
+        width: @mobilewidth;
+      }
+
+      .img-content {
+        width: 100%;
+        margin: auto;
+
+        img {
+          width: 100%;
+        }
       }
     }
   }
@@ -36,6 +114,10 @@
       padding-right: 1%;
       padding-left: 0;
     }
+  
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
   }
 
   .content-destination {
@@ -44,6 +126,17 @@
 
     img {
       border-radius: 10px;
+    }
+
+    @media @mobile {
+      width: @mobilewidth;
+
+      h2 {
+        margin-top: 2rem;
+      }
+      h2 , p{
+        padding-left: @leftmargin;
+      }
     }
   }
 
@@ -56,6 +149,21 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .buttonstyle(@btndisplay, @alignment, @txtsize, @txtpadding, @white, @eastern-blue, @pillshape); 
+      }
+    }
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      width: 70%; 
+      margin: 0 auto;
+
+      .destination {
+        width: 100%; 
+      }
     }
   }
 }// home
